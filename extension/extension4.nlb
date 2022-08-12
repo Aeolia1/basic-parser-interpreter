@@ -1,0 +1,4 @@
+BEGIN {
+   RAND 5 5 $A
+   PRINT $A
+}

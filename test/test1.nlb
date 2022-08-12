@@ -1,0 +1,8 @@
+BEGIN {
+   SET $A := 10 ;
+   PRINT $A
+   SET $B := 5 ;
+   PRINT $B
+   SET $A := $A $B B-TIMES ;
+   PRINT $A
+}

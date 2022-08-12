@@ -1,0 +1,72 @@
+Hello Professor Neil, the following is my detailed description to the test of parser.c interp.c and extension.c files
+
+The makefile contains three instructions as below, you can call the corresponding program by typing make xx (all files are under test folder):
+make parse
+make interp
+make extension
+
+I have also put parser.c, interp.c and extension.c under the folders with the same name
+
+- White box test: I put the white box test at the end of each .c file in the form of void test().
+You can run the specified file through the above three make commands and test each function itself by running the .c file.
+
+- Black box test: I also put some new .nlb files in the folders, by running "make interp", their answers are:
+
+
+test1.nlb
+
+10
+5
+10
+-------
+
+
+test2.nlb
+
+ARRAY:
+4 6 6 4
+6 9 9 6
+6 9 9 6
+6 9 9 6
+4 6 6 4
+--------
+
+
+test3.nlb
+
+1
+2
+6
+24
+120
+---------
+
+
+test4.nlb
+
+//this test is for some issues, such that if user use an undefined variable, or if
+they use a variable before it is set, the program will end automatically and a warning message will be given//
+
+Answer: $A is an undefined variable, pls set the variable before using it.
+-------
+
+
+test5.nlb
+
+//This test is used to determine if the two arrays are larger than 1*1,
+then their size must be the same, if the user does not comply,
+the program will be terminated and a warning message will appear//
+
+Answer: Both arrays are bigger than 1x1 for B-ADD operation, they must be the same size.
+--------
+
+
+test6.nlb
+//In order to ensure that the binary operation always has two operands during the calculation,
+If by any chance the user only enter 1 operand, the program will be terminated and a warning message will appear.//
+
+Answer: 2 valid operands are required for B-ADD, 1 operand is missing.
+--------
+
+
+

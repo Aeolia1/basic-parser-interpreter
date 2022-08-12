@@ -1,0 +1,7 @@
+BEGIN {
+   ONES 5 5 $A
+   ONES 2 3 $B
+   SET $C := $B $A B-ADD ;
+   PRINT "ARRAY"
+   PRINT $C
+}

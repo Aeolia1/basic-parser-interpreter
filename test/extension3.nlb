@@ -1,0 +1,4 @@
+BEGIN {
+   ZEROS 5 5 $A
+   SIZE $A
+}

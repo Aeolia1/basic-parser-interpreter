@@ -1,0 +1,7 @@
+BEGIN {
+   ONES 5 4 $A
+   SET $B := $A U-EIGHTCOUNT ;
+   SET $C := $B 1 B-ADD ;
+   PRINT "ARRAY:"
+   PRINT $C
+}

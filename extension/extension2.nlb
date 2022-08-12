@@ -1,0 +1,5 @@
+BEGIN {
+   ZEROS 5 5 $A
+   PRINT "ARRAY:"
+   PRINT $A
+}

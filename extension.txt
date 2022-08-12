@@ -1,0 +1,82 @@
+---EXTENSION PART---
+
+In the extension section, I added 4 functions, namely B-SUB, SIZE, ZEROS and RAND.
+
+- White box test: I put the white box test at the end of extension.c file in the form of void test().
+You can run the file by using the "make extension" instruction and test each function itself by running the extension.c file.
+
+- Black box test: I also put some new .nlb files inside the extension folder.
+The detailed introduction of each function and the corresponding answer towards each test by running "make extension", are as follows:
+
+
+1. B-SUB
+(This function is similar to B-ADD, subtracting each number in the array
+from another number to get the result)
+
+
+extension1.nlb
+
+ARRAY:
+7 7 7 7
+7 7 7 7
+
+
+
+Grammar: <BINARYOP> :: "B-AND" | "B-OR" | "B-GREATER" | "B-LESS" | "B-ADD" | "B-TIMES" | "B-EQUALS" | "B-SUB"
+--------
+
+
+
+2，ZEROS
+(Similar to ONES, the user specifies the value of the row and column, and can print a matrix of the same size where each cell value is 0)
+
+extension2.nlb
+
+ARRAY:
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+
+
+
+Grammar: <CREATE> ::= "ONES" <ROWS> <COLS> <VARNAME> | "READ" <FILENAME> <VARNAME> | "ZEROS" <ROWS> <COLS>
+---------
+
+
+
+3. SIZE
+(The size function is similar to PRINT, except that it prints the size value of the
+specified variable and the total number of cells it contains)
+
+
+extension3.nlb
+
+ROW: 5  Col: 5  TOTAL CELLS: 25
+
+
+
+Grammar:  <INSTRC> ::= <PRINT> | <SET> | <CREATE> | <LOOP> | <SIZE>
+          <SIZE> ::= "SIZE" <VARNAME>
+--------
+
+
+
+4. RAND
+((Similar to ONES, the user specifies the value of the row and column,
+and can print a matrix of the same size where each cell value is a random number between 0-99.)
+
+extension4.nlb
+
+This test will generate a 5*5 matrix, and the value in each cell is a random number between 0-99.
+
+
+
+Grammar: <CREATE> ::= "ONES" <ROWS> <COLS> <VARNAME> | "READ" <FILENAME> <VARNAME> | "ZEROS" <ROWS> <COLS> | "RAND" <ROWS> <COLS>
+
+
+
+
+
+

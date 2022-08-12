@@ -1,0 +1,4 @@
+BEGIN {
+    SET $A := 2 B-ADD ;
+    PRINT $A
+}

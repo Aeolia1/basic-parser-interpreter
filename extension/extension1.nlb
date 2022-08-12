@@ -1,0 +1,7 @@
+BEGIN {
+   ONES 2 4 $A
+   SET $A := $A 9 B-ADD ;
+   SET $B := $A 3 B-SUB ;
+   PRINT "ARRAY:"
+   PRINT $B
+}
