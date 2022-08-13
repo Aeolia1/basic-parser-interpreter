@@ -1,4 +1,4 @@
-# basic-parser-interpreter-for-MATLAB
+# basic-parser-interpreter-for-MATLAB-like-syntax
 A basic recursive descent parser with an interpreter that compiles the inputs. The function is similar to the basic MATLAB syntax.
 
 
